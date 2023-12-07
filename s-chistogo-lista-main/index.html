@@ -5,35 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>С чистого листа</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;700&display=swap" rel="stylesheet">
  </head>
 <body>
-  <header>
-
+  <header class="header content-section content-section__theme__dark">
+    <a class="header__logo">
+      <img 
+      src="./images/logo.svg" 
+      alt="Логотип проекта" 
+      class="header__logo-image">
+    </a>
+    <nav class="header__menu">
+      <ul class="header__menu-list">
+        <li class="header__menu-item header__menu-item_active">
+          <a class="header__menu-link">Главная</a>
+        </li>  
+        <li class="header__menu-item">
+          <a href="#0" class="header__menu-link">О нас</a>
+        </li>
+        <li class="header__menu-item"> 
+          <a href="#0" class="header__menu-link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <h1>С чистого листа</h1>
+  <main class="content">
+  <section class="cover content-section content-section__theme__dark">
+    <h1 class="cover__title">
+      <span class="accent-span">С</span>
+      <span class="accent-span text-center">чистого</span>
+      <span class="accent-span text-right">листа</span>
+    </h1>
+  </section>
 
-    <div class="subtitle">
-      <h2>8 способов борьбы со страхом чистого листа</h2>
-      <h2>05.06.2022 г.</h2>
-    </div>
+  <section class="intro content-section content-section__theme__dark">
+    Начинать что-то новое — тяжело и страшно. Даже если это просто небольшой фрагмент кода. 
+    Или текст. Например, прежде чем написать здесь что-то вразумительное, 
+    автор(ка) этого материала заварила чай, позвонила бабушке узнать, 
+    как поживают на даче огурцы с помидорами (окей, это правда важно), 
+    10 минут ходила туда-сюда 
+    по комнате, протёрла пыль на столе и заварила чай ещё раз, 
+    потому что он остыл. Всё это время с монитора на неё смотрел чистый лист.
+    <br>
+    <br>
+    Прокрастинировать перед тем, как начать что-то делать 
+    (особенно что-то новое) — нормальная реакция мозга. Разберёмся, почему это происходит.
+  </section>
 
-    <section class="start">
-      Начинать что-то новое — тяжело и страшно. Даже если это просто небольшой фрагмент кода. Или текст. Например, прежде чем написать здесь что-то вразумительное, 
-      автор(ка) этого материала заварила чай, позвонила бабушке узнать, как поживают на даче огурцы с помидорами (окей, это правда важно), 10 минут ходила туда-сюда 
-      по комнате, протёрла пыль на столе и заварила чай ещё раз, 
-      потому что он остыл. Всё это время с монитора на неё смотрел чистый лист.
-      <br>
-      <br>
-      Прокрастинировать перед тем, как начать что-то делать (особенно что-то новое) — нормальная реакция мозга. Разберёмся, почему это происходит.
-    </section>
+  <section class="reasons content-section content-section__theme__bright">
+
+  </section>
+
+  <section class="how-to content-section content-section__theme__dark">
+
+  </section>
+
   </main>
 
-   <footer>
+   <footer class="footer content-section content-section__theme__dark">
 
-  </footer>
+    </footer>
 
 </body>
 </html>

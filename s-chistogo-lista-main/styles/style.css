@@ -1,41 +1,8 @@
-/* eb-garamond-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/eb-garamond-v27-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* eb-garamond-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/eb-garamond-v27-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* inter-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* inter-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/inter-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
 body {
   margin: 0;
-  background-color: #7FfFD4;
-  max-width: 360px;
-  box-sizing: content-box;
+  background-color: #1e1e1e;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
 }
 
 h1, 
@@ -48,14 +15,97 @@ p,
 ul,
 ol,
 blockquote {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-font-family: 'eb-garamond-regular';
+.content-section {
+  box-sizing: border-box;
+  width: 360px;
+  min-height: 100px;
+  margin: auto;
 }
 
-.start {
-  font-family: 'inter';
+.content-section__theme__dark {
+  background-color: #131313;
+  color: #fff;
+}
+
+.content-section__theme__bright {
+  color: #131313;
+  background-color: #fee32a;
+}
+
+.header {
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__logo {
+  display: block;
+  width: 78px;
+}
+
+.header__logo-image {
+  width: 100%;
+}
+
+.header__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.header__menu-link {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.2;  
+}
+
+.header__menu-item_active .header__menu-link{
+  text-decoration: none;
+}
+
+.cover {
+  padding: 7px 20px 32px;
+  background-image: url(../images/cover.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 95% auto;
+}
+
+.cover__title {
+  width: 100%;
+  color: #fff;
+  font-family: 'Eb Garamond', serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1;
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.intro {
+  padding: 0 20px 38px;
+}
+
+.reasons {
+  padding: 40px 20px;
+}
+
+.how-to {
+  padding: 40px 20px 60px;
 }
